@@ -1,13 +1,17 @@
-name: autodeploy
-run-name: Autodeploys to the gh-pages branch on every push to main
-on: [push]
+name: Autodeploy react app to gh pages
+run-name: Autodeploys to the gh-pages branch on every push or merged pull to main
+on:
+  push:
+    branches: -'main'
+  pull_request:
+    branches: -'main'
+permissions:
+  contents: write
 jobs:
-  check-bats-version:
+  auto-deploy:
+    concurrency: ci-${{github.ref}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-      - run: npm install
+      - run: npm ci
       - run: npm run deploy
