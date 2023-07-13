@@ -2,6 +2,8 @@
 import { Route, Router, Routes, useRoutes } from "react-router-dom"
 import { useState } from "react"
 
+
+
 // component imports
 import { Header, Navbar, Home } from "./components"
 
@@ -14,15 +16,6 @@ import { Header, Navbar, Home } from "./components"
 function App() {
   
   
-  // multi path routes
-  const homeRoute = useRoutes(
-    ["", "/", "/home"].map(str => {
-      return {
-        path: str,
-        element: <Home />
-      }
-    })
-    )
  
  
     return (
@@ -31,8 +24,9 @@ function App() {
 
  <Navbar />
  <div className="main-content">
+ 
 <Routes >
-  homeRoute
+  <Route path="home" element={<Home />} />
 </Routes>
  </div>
 
