@@ -1,3 +1,4 @@
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,13 +6,14 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: whitesmoke;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 }
 
 a {
@@ -24,16 +26,74 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  /* display: grid;
+  grid-template-columns: [nav-col] 1fr [main-col] 9fr;
+  grid-template-rows: [header-row] 1fr [main-row] 9fr; */
+  width: 100vw;
   min-height: 100vh;
+
 }
 
+header {
+  
+  margin-left: 10%;
+  text-align: center;
+  vertical-align: middle;
+  
+  background-color: rgb(135, 158, 222);
+  position: fixed;
+  width: 90%;
+  height: 10%;
+ 
+}
+
+nav {
+  width: fit-content;
+  height: fit-content;
+  height: 100%;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: burlywood;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+ z-index: -1;
+ 
+}
+
+.nav-link {
+  z-index: 1;
+  font-size: 2rem;
+  color: white;
+  font-weight: bolder;
+  margin-left: 15%;
+}
+
+.main-content {
+  margin: 0;
+  padding: 15px;
+  height: 90%;
+  width: 90%;
+  position: fixed;
+  overflow: auto;
+}
+
+.logo {
+  margin-top: 5%;
+  margin-left: 25%;
+  width: 50%;
+}
+
+
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 4rem;
+  
+  line-height: 0.5;
 }
 
 button {
@@ -55,15 +115,4 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+
