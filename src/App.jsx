@@ -5,30 +5,22 @@ import { useState } from "react"
 
 
 // component imports
-import { Header, Navbar, Home } from "./components"
-
-
-
-
-
+import {  Navbar, Home, Socials } from "./components"
 
 
 function App() {
-  
-  
  
- 
+
     return (
   <>
- <Header />
 
  <Navbar />
- <div className="main-content">
  
 <Routes >
-  <Route path="home" element={<Home />} />
+  <Route path="" element={<Home />} />
+  <Route path="socials" element={<Socials />} />
 </Routes>
- </div>
+ 
 
   </>
  )
