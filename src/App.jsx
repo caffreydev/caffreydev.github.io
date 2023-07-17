@@ -5,7 +5,7 @@ import { useState } from "react"
 
 
 // component imports
-import {  Navbar, Home, Socials } from "./components"
+import {  Navbar, Home, Socials, Projects } from "./components"
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 <Routes >
   <Route path="" element={<Home />} />
   <Route path="socials" element={<Socials />} />
+  <Route path="projects" element={<Projects />} />
 </Routes>
  
 

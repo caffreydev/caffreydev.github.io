@@ -15,7 +15,7 @@ export const Socials = () => {
 <tr>
     <td>Github</td>
     <td>caffreydev</td>
-    <td><a href="https://github.com/caffreydev" ><img src="/src/assets/github-mark.png"/></a></td>
+    <td><a href="https://github.com/caffreydev" ><img src="/github-mark.png"/></a></td>
 </tr>
 <tr>
     <td>Linkedin</td>

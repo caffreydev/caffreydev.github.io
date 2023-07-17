@@ -60,6 +60,22 @@ nav .links >a:hover {
 }
 
 
+@media screen and (max-width: 600px) {
+
+  nav {
+    
+   
+    margin: 0;
+    padding: 3px;
+  }
+
+  nav.links > a {
+    font-size: 1rem;
+  }
+  
+}
+
+
 
 /*end of nav bar formatting */
 
@@ -81,6 +97,7 @@ h1 {
   display: block;
   border-collapse: collapse;
   font-size: 1.5rem;
+  
 }
 
 .socials-table > tr > th, .socials-table > tr > td {
@@ -89,7 +106,7 @@ h1 {
 }
 
 .socials-table > tr > td > a > img {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .socials-table > tr > td > a > img:hover {
@@ -97,7 +114,58 @@ h1 {
   box-shadow: 0 0 25px red;
 }
 
+@media screen and (max-width: 600px) {
+
+  .socials-table {
+    font-size: 1rem;
+  }
+
+  .socials-table > tr > td > a > img {
+    max-width: 50px;
+  }
+  
+}
+
+
 /* ends socials styling */
+
+
+
+/* Styling for projects page  */
+
+.projects-table {
+  align-items: center;
+ justify-content: center;
+ display: block;
+ border-collapse: collapse;
+ font-size: 1.5rem;
+ 
+}
+
+
+.projects-table > tr > td > a > img {
+  max-width: 90px;
+}
+
+.projects-table > tr > th, .projects-table > tr > td {
+  border: 3px rgb(0, 26, 255) dashed;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .projects-table {
+    font-size: 1rem;
+  }
+
+  .projects-table > tr > td > a > img {
+    max-width: 50px;
+  }
+  
+}
+
+/* ends projects styling */
 
 button {
   border-radius: 8px;

@@ -1,14 +1,14 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 export const Navbar = () => {
     
    
     return (
-        <nav className={window.innerWidth <= 480 ? "mobile-nav" : "desktop-nav"}>         
+        <nav >         
              
                 <div className="logo">
-                <img src="/src/assets/Caffreydevlogo.png" alt="caffreydev logo"/>
+                <img src="/Caffreydevlogo.png" alt="caffreydev logo"/>
                 </div>           
                 <div className="links">
                 <Link to="">Home</Link>
