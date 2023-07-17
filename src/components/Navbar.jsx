@@ -8,7 +8,7 @@ export const Navbar = () => {
         <nav className={window.innerWidth <= 480 ? "mobile-nav" : "desktop-nav"}>         
              
                 <div className="logo">
-                <img src="src/assets/Caffreydevlogo.png" alt="caffreydev logo"/>
+                <img src="/src/assets/Caffreydevlogo.png" alt="caffreydev logo"/>
                 </div>           
                 <div className="links">
                 <Link to="">Home</Link>
