@@ -89,21 +89,31 @@ h1 {
   line-height: 1;
 }
 
+th {
+  color: white;
+  background-color: darkblue;
+  font-weight: bolder;
+  border-color: whitesmoke;
+}
+
+
 
 /* styling for socials page */
 .socials-table {
+  table-layout: fixed;
+   padding: 15px;
    align-items: center;
   justify-content: center;
   display: block;
   border-collapse: collapse;
   font-size: 1.5rem;
-  
 }
 
 .socials-table > tr > th, .socials-table > tr > td {
-  border: 3px rgb(0, 26, 255) dashed;
+  border: 3px darkblue solid;
   padding: 30px;
 }
+
 
 .socials-table > tr > td > a > img {
   max-width: 100px;
@@ -127,6 +137,7 @@ h1 {
 }
 
 
+
 /* ends socials styling */
 
 
@@ -139,7 +150,8 @@ h1 {
  display: block;
  border-collapse: collapse;
  font-size: 1.5rem;
- 
+ padding: 30px;
+ width: 100vw;
 }
 
 
@@ -148,8 +160,13 @@ h1 {
 }
 
 .projects-table > tr > th, .projects-table > tr > td {
-  border: 3px rgb(0, 26, 255) dashed;
+  border: 3px darkblue solid;
   padding: 10px;
+}
+
+.projects-table > tr > td > a > img:hover {
+  
+  box-shadow: 0 0 25px red;
 }
 
 
@@ -166,6 +183,8 @@ h1 {
 }
 
 /* ends projects styling */
+
+
 
 button {
   border-radius: 8px;
@@ -187,3 +206,13 @@ button:focus-visible {
 }
 
 
+/* General mobile specific */
+
+
+.mobile-only-text {
+  color: red;
+  font-size: large;
+}
+
+
+/* Ends general mobile specific styling */
