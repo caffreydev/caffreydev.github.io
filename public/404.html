@@ -8,13 +8,9 @@
    const fullPath = window.location.href
 
     const base = "joemccaffrey.dev/"
-    const ncNews = "joemcaffrey.dev/nc-news/"
-
-   if (fullPath.includes(ncNews)) {
-    window.location.href = `${ncNews}#/${fullPath.split(ncNews)[1]}}`
-   } else {
-    window.location.href = `${base}#/${fullPath.split(base)[1]}`
-   }
+   
+    window.location.href = `#/${fullPath.split(base)[1]}`
+   
 
 
     </script>
