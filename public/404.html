@@ -11,9 +11,9 @@
     const ncNews = "joemcaffrey.dev/nc-news/"
 
    if (fullPath.includes(ncNews)) {
-    window.location.replace(`${ncNews}#/${fullPath.split(ncNews)[1]}}`) 
+    window.location.href = `${ncNews}#/${fullPath.split(ncNews)[1]}}`
    } else {
-    window.location.replace(`${base}#/${fullPath.split(base)[1]}`)
+    window.location.href = `${base}#/${fullPath.split(base)[1]}`
    }
 
 
