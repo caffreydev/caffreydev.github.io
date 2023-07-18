@@ -5,7 +5,7 @@ import { useState } from "react"
 
 
 // component imports
-import {  Navbar, Home, Socials, Projects } from "./components"
+import {  Navbar, Home, Socials, Projects, BadPath } from "./components"
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
   <Route path="" element={<Home />} />
   <Route path="socials" element={<Socials />} />
   <Route path="projects" element={<Projects />} />
+  <Route path="*" element={<BadPath />} />
 </Routes>
  
 
