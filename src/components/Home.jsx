@@ -5,11 +5,11 @@ export const Home = () => {
     <h1>Welcome to joemccaffrey.dev!</h1>
     <h2>This site serves as a portfolio page, and reference to my other projects</h2>
     </header> 
-        <h3>What is this?:</h3>
-        <p>I am Joe McCaffrey, a full stack Javascript software engineer, with experience in web design, building out api servers,
+        <h3>What is this?</h3>
+        <p>I am Joe McCaffrey, a full stack software engineer, with experience in web design, building out api servers,
             game design, databases, and data science and analysis.  
             <br />
-            That's the TLDR bio - for developers and those more technically minded please check out my (longer) bio on my github profile,
+            That's the TLDR bio - for developers and those more technically minded please check out my (longer!) bio on my github profile,
             available through the Socials page linked in the above nav bar.          
         </p>
         <p>
